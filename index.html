@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sítio Bela Vista - Produtos Frescos e Artesanais</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sítio Bela Vista</h1>
+            <nav>
+                <ul>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#localizacao">Como Chegar</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Bem-vindos ao Sítio Bela Vista!</h2>
+                <p>Onde a natureza e o sabor se encontram. Produtos frescos, orgânicos e feitos com carinho diretamente da nossa terra para sua mesa.</p>
+                <a href="#produtos" class="btn">Conheça nossos produtos</a>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="container">
+                <h2>Nossos Produtos</h2>
+                <div class="produto-carousel">
+                    <div class="produto-item">
+                        <img src=https://www.lojinhauai.com/blog/wp-content/uploads/2018/10/mel-puro-cristaliza-saiba-mais.jpg alt="Mel Puro" />
+                        <h3>Mel Puro</h3>
+                        <p>Nosso mel é 100% natural, colhido com cuidado das nossas abelhas.</p>
+                    </div>
+                    <div class="produto-item">
+                        <img src=https://s2.glbimg.com/ebtqgl2Izv5Ie5SmNnByI8Qn8uU=/620x550/e.glbimg.com/og/ed/f/original/2018/06/29/geleia-de-framboesa.jpg alt="Geleias Artesanais" />
+                        <h3>Geleias Artesanais</h3>
+                        <p>Geleias feitas com frutas frescas da estação, sem conservantes.</p>
+                    </div>
+                    <div class="produto-item">
+                        <img src="images/frutas-organicas.jpg" alt="Frutas Orgânicas" />
+                        <h3>Frutas Orgânicas</h3>
+                        <p>Uma variedade de frutas cultivadas organicamente, colhidas no ponto certo.</p>
+                    </div>
+                    <div class="produto-item">
+                        <img src="images/verduras-frescas.jpg" alt="Verduras Frescas" />
+                        <h3>Verduras Frescas</h3>
+                        <p>Verduras crocantes e saudáveis, direto da nossa horta para você.</p>
+                    </div>
+                </div>
+                <button class="carousel-btn prev-btn">❮</button>
+                <button class="carousel-btn next-btn">❯</button>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <div class="container">
+                <h2>Nossa Galeria</h2>
+                <div class="gallery-grid">
+                    <img src="https://blog.zanardiempreendimentos.com.br/content/images/2023/12/sitio_pequeno.jpg" />
+                    <img src=https://cf.bstatic.com/xdata/images/hotel/max1024x768/254035631.jpg?k=438b2a6a8b5e586c22c4df282490e5953b27241ef2f97d55c617be60286ce01e&o=&hp=1/>
+                    <img src= https://thumbs.dreamstime.com/b/planta%C3%A7%C3%B5es-com-alface-42394588.jpg />
+                    <img src=https://blog.humberseguros.com.br/wp-content/uploads/2022/11/tipos-de-colheita-1024x675.jpeg/>
+                    <img src=https://web.whatsapp.com/b9978e52-969e-45a9-b0a1-7b6ad156ea8a.jpeg/>
+                    <img src="images/produtos-expostos.jpg" alt="Produtos Expostos" />
+                </div>
+            </div>
+        </section>
+
+        <section id="localizacao">
+            <div class="container">
+                <h2>Como Chegar</h2>
+                <p>Estamos localizados em Maringá, Paraná. Venha nos visitar e desfrutar da tranquilidade do campo!</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116766.19500000001!2d-52.07261899999999!3d-23.421944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9482f5b61f9b3b0d%3A0x6b0d9c4c7f0b9e8b!2sMaring%C3%A1%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p class="map-hint">O mapa acima mostra a localização de Maringá. Para direções exatas, clique no botão abaixo:</p>
+                <button id="direcoesBtn" class="btn">Obter Direções Detalhadas</button>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <p>Tem alguma dúvida ou gostaria de fazer um pedido? Preencha o formulário abaixo ou entre em contato conosco!</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sítio Bela Vista. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/930/476/non_2x/facebook-logo-facebook-icon-transparent-free-png.png alt="Facebook" /></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
